@@ -66,8 +66,8 @@ const EditProduct = (props) => {
                 <label>Preço:</label>
                 <input 
                     type="text" 
-                    name="preco" 
-                    placeholder="Preço do produto" 
+                    name="valor" 
+                    placeholder="Valor do produto" 
                     value={valor}
                     onChange={(event) => setValor(event.target.value)}
                 />

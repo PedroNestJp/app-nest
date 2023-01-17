@@ -50,11 +50,11 @@ const CreateProduct = () => {
                     onChange={(event) => setDescricao(event.target.value)}/>
             </div>
             <div>
-                <label>Preço:</label>
+                <label>Valor:</label>
                 <input 
                     type="text" 
-                    name="preco" 
-                    placeholder="Preço do produto" 
+                    name="Valor" 
+                    placeholder="Valor do produto" 
                     value={valor}
                     onChange={(event) => setValor(event.target.value)}
                     />

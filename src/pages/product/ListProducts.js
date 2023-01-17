@@ -33,7 +33,7 @@ const ListProducts = () => {
                 <td>{produto.id}</td>
                 <td>{produto.nome}</td>
                 <td>{produto.descricao}</td>
-                <td>{produto.preco}</td>
+                <td>{produto.valor}</td>
                 <td>{produto.createdAt}</td>
                 <td>
                     <Link to={`/product/update/${produto.id}`} produto={produto}>
@@ -61,7 +61,7 @@ const ListProducts = () => {
                         <td>Código</td>
                         <td>Nome do produto</td>
                         <td>Descrição</td>
-                        <td>Preço</td>
+                        <td>valor</td>
                         <td>Criado em:</td>
                         <td></td>
                     </tr>
