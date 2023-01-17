@@ -28,7 +28,7 @@ const EditProduct = (props) => {
             descricao: descricao,
             valor: valor 
         }
-        const resposta = await api.put(`http://localhost:3001/product/update/${id}`, produto)
+        const resposta = await api.put(`/product/update/${id}`, produto)
         if (resposta.status === 200) {
             navigate("/products");
         }

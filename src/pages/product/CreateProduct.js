@@ -16,7 +16,7 @@ const CreateProduct = () => {
             descricao: descricao,
             valor: valor 
         }
-        const resposta = await api.post('/produtos', produto)
+        const resposta = await api.post('/product/create', produto)
         if (resposta.status === 200) {
             navigate("/products");
         }
