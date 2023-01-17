@@ -16,7 +16,7 @@ const ListUser = () => {
         setUser(resposta.data)
     }
 
-    const preencheTabela = () => {
+    function preencheTabela() {
         return usuarios.map((user) => (
             <tr>
                 <td>{user.id}</td>
@@ -26,12 +26,12 @@ const ListUser = () => {
                 <td>{user.createdAt}</td>
                 <td>{user.updatedAt}</td>
                 <td>
-                    <Link to={`/user/update/${user.id}`} user = {user} >
+                    <Link to={`/user/update/${user.id}`} user={user}>
                         <button>Update</button>
                     </Link>
                 </td>
             </tr>
-          ))
+        ))
     }
 
     return (
