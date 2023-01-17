@@ -19,7 +19,7 @@ const ListProducts = () => {
     }
 
     const deletarProduto = async (id) => {
-        const resposta = await api.delete(`http://localhost:3001/product/delete/${id}`)
+        const resposta = await api.delete(`/product/delete/${id}`)
         setProdutos(resposta.data)
         
         
