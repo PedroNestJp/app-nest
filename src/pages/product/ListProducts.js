@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import api from '../../service/Api'
 
-var exampleSocket = new WebSocket("https://nest-app.herokuapp.com", "protocolOne")
+var exampleSocket = new WebSocket("wss://nest-app.herokuapp.com", "protocolOne")
 
 exampleSocket.send("Aqui vai algum texto que o servidor esteja aguardando urgentemente!");
 
