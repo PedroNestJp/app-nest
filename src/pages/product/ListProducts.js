@@ -4,7 +4,9 @@ import api from '../../service/Api'
 
 var exampleSocket = new WebSocket("wss://nest-app.herokuapp.com", "protocolOne")
 
-exampleSocket.send("Aqui vai algum texto que o servidor esteja aguardando urgentemente!");
+exampleSocket.onopen = function (event) {
+    exampleSocket.send("Aqui vai algum texto que o servidor esteja aguardando urgentemente!");
+  };
 
 const ListProducts = () => {
 
