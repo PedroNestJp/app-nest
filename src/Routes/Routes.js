@@ -24,6 +24,7 @@ import Register from '../pages/register/Register'
           <Route path='/user/update/:id' element={<UpdateUser/>} />
           <Route path='/login' element={<Login/>} />
           <Route path='/register' element={<Register/>} />
+          <Route path='/registerPj' element={<RegisterPj/>} />
         </Routes>
     )
 }
