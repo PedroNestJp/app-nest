@@ -9,6 +9,7 @@ import CreateUSer from '../pages/user/CreateUser'
 import UpdateUser from '../pages/user/UpdateUser'
 import Login from '../pages/Login/Login'
 import Register from '../pages/register/Register'
+import RegisterPj from '../components/RegisterPj.components'
 
  const Rotas = () => {
     return(

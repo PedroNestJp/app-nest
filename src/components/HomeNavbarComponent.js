@@ -12,52 +12,54 @@ const HomeNavbarComponente = () =>{
           <Link to='/home'>
             <img className="logoNestHeaderHome" src={logo} alt='logo' />
           </Link>
+
           <div className="search">
-            <input 
-              className="search" 
-              id="busque-aqui" 
-              autoComplete="off" 
-              placeholder="Busque aqui" 
-              type="text">
-            </input>
-            <button className="button-submit" >
-              <img srcSet={iconLupa} 
-                id="icon-lupa" 
-                title="icon-lupa" 
-                className="icon-lupa" 
-                type="submit"  
-                alt="icon-lupa"/>
-            </button>
+              <input 
+                className="search" 
+                id="busque-aqui" 
+                autoComplete="off" 
+                placeholder="Busque aqui" 
+                type="text">
+              </input>
+              <button className="button-submit" >
+                <img srcSet={iconLupa} 
+                  id="icon-lupa" 
+                  title="icon-lupa" 
+                  className="icon-lupa" 
+                  type="submit"  
+                  alt="icon-lupa"/>
+              </button>
           </div>
+
           <div className="areaProfile"> 
-            <Link to='/myAccount'>
-              <img 
-                className="iconProfileHome" 
-                src={iconProfile} 
-                alt="iconProfile"/> 
-            </Link>
-            <span 
-            className="text-profile-home">
-              Faça seu{' '}
-            <Link 
-              to='/login' 
-              id="link-login-header-home" 
-              title="link-login-header" 
-              className="link-login-home" 
-              href="/login">
-              LOGIN 
-            </Link>
-             {' '}ou
-            <Link 
-              to='/register' 
-              id="link-cadastre-se-home" 
-              title="link-cadastre-se" 
-              className="link-cadastre-se-home" 
-              href="/register">
-              {' '}CADASTRE-SE
-            </Link>
-          </span>
-            </div>
+              <Link to='/myAccount'>
+                <img 
+                  className="iconProfileHome" 
+                  src={iconProfile} 
+                  alt="iconProfile"/> 
+              </Link>
+              <span 
+              className="text-profile-home">
+                Faça seu{' '}
+              <Link 
+                to='/login' 
+                id="link-login-header-home" 
+                title="link-login-header" 
+                className="link-login-home" 
+                href="/login">
+                LOGIN 
+              </Link>
+              {' '}ou
+              <Link 
+                to='/register' 
+                id="link-cadastre-se-home" 
+                title="link-cadastre-se" 
+                className="link-cadastre-se-home" 
+                href="/register">
+                {' '}CADASTRE-SE
+              </Link>
+              </span>
+          </div>
 
           <div className="iconsNavHome">
             <span> 
