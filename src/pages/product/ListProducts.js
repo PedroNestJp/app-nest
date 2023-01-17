@@ -2,7 +2,9 @@ import { useState, useEffect } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import api from '../../service/Api'
 
+var exampleSocket = new WebSocket("ws://www.example.com/socketserver", "protocolOne")
 
+exampleSocket.send("Aqui vai algum texto que o servidor esteja aguardando urgentemente!");
 
 const ListProducts = () => {
 
