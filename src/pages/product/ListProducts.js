@@ -49,7 +49,7 @@ const ListProducts = () => {
         <div>
             <h1>Produtos</h1>
             <div>
-                <Link to="/products/create">
+                <Link to="/product/create">
                     <button>
                         Cadastrar
                     </button>

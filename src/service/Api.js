@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const api = axios.create({
-    baseURL:"https://nest-app.herokuapp.com:3001"
+    baseURL:"https://nest-app.herokuapp.com"
 })
 
 export default api
