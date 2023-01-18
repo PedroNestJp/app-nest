@@ -18,21 +18,15 @@ return(
         </div>
     
         <section className='inputs'>
-            <div className='inputsNameCpf' >
-                 <input className="input-name" placeholder="Nome completo*:" type="text" name="name" id="name"/>
-                 <input className="input-cpf" placeholder="CPF*:" type="number" name="cpf" id="cpf"/>
-            </div>
-            <div className='inputsBirthDateCell'> 
+            
+                <input className="input-name" placeholder="Nome completo*:" type="text" name="name" id="name"/>
+                <input className="input-cpf" placeholder="CPF*:" type="number" name="cpf" id="cpf"/>
                 <input className="input-birthDate" placeholder="Data de Nascimento*:" type="date" name="cpf" id="cpf"/>
                 <input className="input-tell" placeholder="Celular*:" type="number" name="tell" id="tell"/>
-            </div>
-            <div className='inputEmail'> 
-                <input className="input-email" placeholder="E-mail*:" type="text" name="text" id="text"/></div>
-            <div className='inputsPasswords'> 
+                <input className="input-email" placeholder="E-mail*:" type="text" name="text" id="text"/>
                 <input className="input-password" placeholder="Senha*:" type="password" name="password" id="password"/>
                 <input className="input-repeatPassword" placeholder="Repetir Senha*:" type="password" name="repeatPassword" id="repeatPassword"/>
-                <button className="eye-off" tabindex="-1" > </button>
-            </div>
+            
         </section>
        
 
