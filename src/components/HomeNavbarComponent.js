@@ -15,7 +15,7 @@ const HomeNavbarComponente = () =>{
 
           <div className="search">
               <input 
-                className="search" 
+                className="inputSearch" 
                 id="busque-aqui" 
                 autoComplete="off" 
                 placeholder="Busque aqui" 

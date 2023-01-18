@@ -13,8 +13,7 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    height: 154px;
-    padding: 20px;
+    padding: 5px;
     background: #000000;
 
 }
@@ -37,11 +36,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 1em 0 1em;
     width: 65%;
     
 }
 
-input {
+.inputSearch {
 
     width: 100%;
     height: 30px;
@@ -75,7 +75,6 @@ input:hover{
 
 .areaProfile{
 
-    margin-left: 20px;
     padding-top: 10px;
     display: flex;
 }
@@ -83,12 +82,12 @@ input:hover{
 .text-profile-home {
 
     margin-left: 6px;
-    width: 100px;
+    width: 90px;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 10px;
-    line-height: 15px;
+    line-height: 12px;
     
     color: #FFFFFF;
 
@@ -106,7 +105,6 @@ input:hover{
 .iconsNavHome{
 
     display: flex;
-    flex-direction: row;
     align-items: center;
     
 }
@@ -114,8 +112,7 @@ input:hover{
 .icon-support, .icon-shoppingCart, .favoriteIcon#favoriteIcon, .iconProfileHome{
     border-radius: 50%;
     margin: 3px;
-    width: 32px;
-    height: 32px;
+    width: 25px;
 }
 
 .contactsLine#contactsLineHome {
@@ -161,7 +158,7 @@ input:hover{
 }
 
 .container{
-    padding: 50px;
+    padding: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,9 +166,18 @@ input:hover{
     flex-wrap: wrap;
 }
 
+.descValue{
+
+    align-items: center;
+    justify-content: center;
+    text-align: -webkit-center;
+
+}
+
 .typepc-text {
 
-    margin: 30px;
+    text-align: -webkit-center;
+
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 900;
@@ -182,21 +188,19 @@ input:hover{
 
 .imgsTypesPcs{
     display: flex;
-    flex-wrap: wrap;
 
 }
+
+@media {}
 
 .img-typepc-1,.img-typepc-2,.img-typepc-3{
 
     cursor: pointer;
-    width: 300px;
-    height: 300px;
-    margin: 10px;
+    width: 250px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
 }
 .img-typepc-1:hover,.img-typepc-2:hover,.img-typepc-3:hover {
-    width: 310px;
-    height: 310px;
+    width: 265px;
     filter: drop-shadow(0px 10px 10px rgba(121, 20, 20, 0.6));
 }
 
@@ -205,7 +209,8 @@ input:hover{
 }
 
 a#textTypePc{
-    margin: 50px;
+    display: flex;
+    text-align: -webkit-center;
     text-decoration: none;
     color: #E20100;
 }
@@ -216,6 +221,8 @@ a#textTypePc{
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    text-align: -webkit-center;
+    
 
 }
 
@@ -225,7 +232,6 @@ a#textTypePc{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 10px;
 
 }
 
@@ -233,8 +239,8 @@ a#textTypePc{
 
     font-family: 'Poppins';
     font-style: normal;
-    font-weight: 900;
-    font-size: 20px;
+    font-weight: 800;
+    font-size: 15px;
 
 
 }
@@ -245,9 +251,8 @@ a#textTypePc{
     position: fixed;
     width: 100px;
     height: 100px;
-    left: 35px;
-    top: 500px;
-
+    left: 75%;
+    top: 80%;
 }
 
 .icon-chat:hover{
@@ -277,7 +282,7 @@ a#textTypePc{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 900;
-    font-size: 35px;
+    font-size: 26px;
     line-height: 52px;
     
     color: #E20100;
@@ -286,15 +291,11 @@ a#textTypePc{
 
 .styleBox{
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
     padding: 20px;
-    margin: 40px;
+    width: 240px;
     box-sizing: border-box;
-    width: 298px;
-    height: 513px;
+    margin: 7px;
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 5px;
@@ -309,17 +310,10 @@ a#textTypePc{
 
 }
 
-.img-hl-1, .img-hl-2, .img-hl-3{
-    width: 272px;
-    height: 300px;
-}
-
 .favoriteIcon{
 
-    margin-left: 237px;
+    margin-left: 85%;
     cursor: pointer;
-    width: 40px;
-    height: 40px;
 }
 
 .favoriteIcon:hover{
@@ -379,15 +373,21 @@ a#textTypePc{
     color: #000000;
 }
 
+@media (min-width:765px ) {
+    .buyByPlatform{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+
 .buyByPlatform{
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     margin: 20px;
 }
 .divBuyByPlatform{
-    display: flex;
+ 
     flex-wrap: wrap;
 }
 
@@ -400,15 +400,13 @@ a#textTypePc{
 }
 .text-buy-by-platform{
 
-    width: 380px;
-    height: 53px;
+    text-align: -webkit-center;
 
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 900;
     font-size: 25px;
-    line-height: 52px;
-    
+    line-height: 30px;
     color: #FF0101;
 }
 
@@ -453,24 +451,11 @@ a#textTypePc{
 
 .bs-text {
 
-    width: 350px;
-    height: 50px;
-
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 900;
-    font-size: 30px;
-    line-height: 52px;
-
-    color: #FF0101;
-
-}
-
-.img-bs-1, .img-bs-2, .img-bs-3{
-
-    width: 293px;
-    height: 300px;
-
+    font-size: 25px;
+    color:#FF0101
 }
 
 .installmentPrice-bs-1, .installmentPrice-bs-2, .installmentPrice-bs-3,
@@ -491,22 +476,6 @@ a#textTypePc{
     line-height: 36px;
     
     color: #E20100;
-}
-
-.oldPrice{
-    width: 194px;
-    height: 24px;
-}
-
-.currentPrice{
-    width: 182px;
-    height: 36px;
-}
-
-.installmentPrice{
-    width: 206px;
-    height: 24px;
-
 }
 
 .buy-bs:hover{
@@ -539,13 +508,10 @@ a#textTypePc{
 
 .departmentsText{
 
-    width: 354px;
-    height: 53px;
-
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 900;
-    font-size: 35px;
+    font-size: 28px;
     line-height: 52px;
 
     color: #E20100;
@@ -567,8 +533,6 @@ a#textTypePc{
 }
 
 .bbd-text{
-    width: 173px;
-    height: 24px;
     
     font-family: 'Inter';
     font-style: normal;
@@ -578,49 +542,6 @@ a#textTypePc{
     
     color: #E20100;
 
-}
-
-
-.img-bbd-1{
-    width: 221px;
-    height: 114px;
-}
-.img-bbd-2{
-    width: 243px;
-    height: 122px;
-
-}
-.img-bbd-3{
-    width: 241px;
-    height: 229px;
-    
-}
-.img-bbd-4{
-
-    width: 230px;
-    height: 125px;
-}
-
-.img-bbd-1:hover{
-    width: 231px;
-    height: 124px;
-}
-.img-bbd-2:hover{
-
-    width: 251px;
-    height: 132px;
-
-}
-.img-bbd-3:hover{
-
-    width: 251px;
-    height: 249px;
-
-}
-.img-bbd-4:hover{
-
-    width: 240px;
-    height: 135px;
 }
 
 .contactsLine-2{

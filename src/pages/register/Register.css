@@ -11,60 +11,70 @@
 .navbarShort {
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    height: 118px;
     padding: 0px 90px 0px 90px;
     background: #000000;
+    flex-wrap: wrap;
 
 }
 
 .logoNestHeader {
-
-    margin: 20px;
+    
     width: 135px;
     height: 86px;
-
+    
 }
 
 .areaProfileNavShort{
     display: flex;
-    width: 200px;
+    align-items: center;
+    justify-content: center;
 }
 
 .iconProfileNavShort {
 
     width: 32px;
     height: 32px;
-
+    
 }
 
 .textProfileNavShort {
 
+   width: 90px;
+    margin-left: 5px;
+    align-items: center;
+    justify-content: center;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 18px;
+    font-size: 10px;
+    line-height: 13px;
     
     color: #FFFFFF;
-
+    
 }
 
 .linkLoginNavShort, .linkRegisterNavShort{
-
+    
     font-style: normal;
     font-weight: 700;
     text-decoration: none;
     color: #FFFFFF;
-
+    
 }
 
-.inputs{
-    
+.content{
+
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background: #f5f5f5;
+    box-shadow: black;
 }
 
 .title{
@@ -82,54 +92,65 @@
     
 }
 
-.linkLegaPerson{
+.typePerson{
+    display: flex;
+    align-items: center;
+}
 
+
+.linkLPerson,.linkPPerson{
     width: 22px;
     height: 22px;
 }
 
-.typePerson1{
-
-    width: 200px;
-    height: 30px;
+.physicalPerson, .legalPerson{
 
     font-family: 'Poppins';
     font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
+    font-weight: 600;
+    font-size: 18px;
     line-height: 30px;
     
-    color: #000000;
+    color: #2b2b2b;
     
 }
 
-.typePerson2{
-
-    width: 200px;
-    height: 30px;
-
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 30px;
-    
-    color: #000000;
-}
-
-.circlePPerson{
-
-    cursor:pointer;
-    width: 22px;
-    height: 22px;
-
-}
-.circle-typePerson2{
-
+.circleLegalPersonl, .circlePhysicalPerson{
     cursor: pointer;
     width: 22px;
     height: 22px;
 
+}
+
+.inputs{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    border-radius: 3px;
+    
+    
+}
+
+inputs::placeholder {
+    
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    margin-left: 20px;
+    
+    color: rgba(226, 1, 0, 0.9);
+
+}
+
+.inputsNameCpf{
+    display: flex;
+    margin: 10px;
 }
 
 .required-field{
@@ -218,17 +239,6 @@
 }
 
 
-.content{
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 830px;
-    background: #f5f5f5;
-    
-}
-
 
 .line {
 
@@ -268,47 +278,6 @@
     height: 204px;
 
     
-}
-
-.inputs{
-
-    box-sizing: border-box;
-
-    padding-left: 20px;
-    padding-right: 10px;
-    width: 370px;
-    height: 45px;
-
-    background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.6);
-    border-radius: 3px;
-}
-
-.input-email{
-
-    box-sizing: border-box;
-
-    padding-left: 20px;
-    width: 760px;
-    height: 45px;
-
-
-    background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.6);
-    border-radius: 3px;
-
-}
-
-input::placeholder {
- 
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 21px;
-
-    color: rgba(226, 1, 0, 0.9);
-
 }
 
 .eye-off{
