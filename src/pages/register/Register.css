@@ -13,7 +13,6 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0px 90px 0px 90px;
     background: #000000;
     flex-wrap: wrap;
 
@@ -72,7 +71,6 @@
     flex-direction: column;
     padding: 15px;
     border-radius: 10px;
-    height: 100vh;
     background: #f5f5f5;
     box-shadow: black;
 }
@@ -91,8 +89,13 @@
 
 .typePerson{
     display: flex;
-    margin-right: 1em;
- 
+    text-align: -webkit-center;
+}
+
+@media (max-width:360px){
+    .typePerson{
+        flex-direction: column;
+    }
 }
 
 .linkLPerson,.linkPPerson{
@@ -107,52 +110,59 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 30px;
+    margin: 0px 5px 0px 5px;
     
     color: #2b2b2b;
     
 }
-
-.circleLegalPersonl, .circlePhysicalPerson{
-    cursor: pointer;
-    width: 22px;
-    height: 22px;
-
-}
-
-@media (max-width=420px){
-    .typePerson{
-        display: flex;
-        margin-right: 1em;
-        flex-direction: ;
-     
-    }
-    
-}
-
 .inputs{
-
+    
     display: grid;
     grid-gap: 4px;
     margin: 10px;
     height: 10rem;
-    width: 40rem;
-
-
-    grid-template-areas:
-        "input-name input-cpf"
-        "input-birthDate input-tell"
-        "input-email input-email"
-        "input-password input-repeatPassword";
+    width: 1200px;
     
+    
+    grid-template-areas:
+    "input-name input-cpf"
+    "input-birthDate input-tell"
+    "input-email input-email"
+    "input-password input-repeatPassword";
+    
+}
+@media (max-width:560px){
+    .inputs{
+        height: 20rem;
+        grid-template-areas: 
+        "input-name"
+        "inputCpf"
+        "input-birthDate"
+        "input-tell"
+        "input-email"
+        "input-password"
+        "input-repeatPassword"
+        
+    }
 }
 
 .inputsRegister{
-  outline: none;
+    outline: none;
+}
+
+.input-name{
+    grid-column: 1/3;
+
+}
+@media (max-width:560px){
+    .input-name{
+        grid-column: 1/1;
+    
+    }
+
 }
 
 .input-email{
-
-
 }
 
 inputs::placeholder {
@@ -167,19 +177,13 @@ inputs::placeholder {
     color: rgba(226, 1, 0, 0.9);
 
 }
-
 .inputsNameCpf{
     
-}
-.input-name{
-    grid-column: 1/3;
-
 }
 .input-cpf{
    
 }
-
-.inoutBirthDateCell{
+.inputBirthDateCell{
    
 }
 .input-birthDate{

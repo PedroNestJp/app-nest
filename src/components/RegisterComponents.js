@@ -13,9 +13,9 @@ return(
 
         <div className='typePerson'>
             <div className="physicalPerson"> PESSOA FÍSICA</div>
-                <input className="circlePPerson" type="radio" checked/>
+                <input id='circlePPerson' className="circlePPerson" type="radio" checked/>
             <div className="legalPerson"> PESSOA JURÍDICA</div>
-                <input className="circleLegalPerson" type="radio" />
+                <input id='circleLegalPerson' className="circleLegalPerson" type="radio" />
         </div>
     
         <section className='inputs'>
