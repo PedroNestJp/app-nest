@@ -6,26 +6,27 @@ const RegisterComponents = () =>{
 return(
 
 <main className="main">
+
     <div className="content">
-        <h1 className="title"> CRIAR MINHA CONTA </h1>
+
+        <h1 className="title"> CRIAR CONTA </h1>
+
         <div className='typePerson'>
             <div className="physicalPerson"> PESSOA FÍSICA</div>
                 <input className="circlePPerson" type="radio" checked/>
-                <a className="linkPPerson" href="./register"></a>
             <div className="legalPerson"> PESSOA JURÍDICA</div>
                 <input className="circleLegalPerson" type="radio" />
-                <a className="linkLPerson" href="./register" ></a>
         </div>
     
         <section className='inputs'>
             
-                <input className="input-name" placeholder="Nome completo*:" type="text" name="name" id="name"/>
-                <input className="input-cpf" placeholder="CPF*:" type="number" name="cpf" id="cpf"/>
-                <input className="input-birthDate" placeholder="Data de Nascimento*:" type="date" name="cpf" id="cpf"/>
-                <input className="input-tell" placeholder="Celular*:" type="number" name="tell" id="tell"/>
-                <input className="input-email" placeholder="E-mail*:" type="text" name="text" id="text"/>
-                <input className="input-password" placeholder="Senha*:" type="password" name="password" id="password"/>
-                <input className="input-repeatPassword" placeholder="Repetir Senha*:" type="password" name="repeatPassword" id="repeatPassword"/>
+                <input className="input-name inputsRegister" placeholder="Nome completo*:" type="text" name="name" id="name"/>
+                <input className="input-cpf inputsRegister" placeholder="CPF*:" type="number" name="cpf" id="cpf"/>
+                <input className="input-birthDate inputsRegister" placeholder="Data de Nascimento*:" type="date" name="cpf" id="cpf"/>
+                <input className="input-tell inputsRegister" placeholder="Celular*:" type="number" name="tell" id="tell"/>
+                <input className="input-email inputsRegister" placeholder="E-mail*:" type="text" name="text" id="text"/>
+                <input className="input-password inputsRegister" placeholder="Senha*:" type="password" name="password" id="password"/>
+                <input className="input-repeatPassword inputsRegister" placeholder="Repetir Senha*:" type="password" name="repeatPassword" id="repeatPassword"/>
             
         </section>
        

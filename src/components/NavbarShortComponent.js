@@ -11,7 +11,7 @@ const NavbarShortComponent = () =>{
         </a>
         <div className='areaProfileNavShort'>
             <a href="./myAccount.html">               
-                    <img className="iconProfileNavShort" srcSet={iconProfile} src="../assets/icons/icon-profile.png" alt=""/> 
+                <i className="fa-solid fa-user"></i>
             </a>
             <span className="textProfileNavShort">
                     Faça seu{' '}

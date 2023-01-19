@@ -70,20 +70,19 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 15px;
     border-radius: 10px;
+    height: 100vh;
     background: #f5f5f5;
     box-shadow: black;
 }
 
 .title{
 
-    width: 300px;
-    height: 42px;
-    
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 800;
-    font-size: 28px;
+    font-size: 25px;
     line-height: 42px;
     
     color: #000000;
@@ -96,7 +95,6 @@
  
 }
 
-
 .linkLPerson,.linkPPerson{
     width: 22px;
     height: 22px;
@@ -106,7 +104,7 @@
 
     font-family: 'Poppins';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 18px;
     line-height: 30px;
     
@@ -121,21 +119,40 @@
 
 }
 
+@media (max-width=420px){
+    .typePerson{
+        display: flex;
+        margin-right: 1em;
+        flex-direction: ;
+     
+    }
+    
+}
+
 .inputs{
+
     display: grid;
     grid-gap: 4px;
     margin: 10px;
+    height: 10rem;
+    width: 40rem;
+
+
     grid-template-areas:
         "input-name input-cpf"
         "input-birthDate input-tell"
         "input-email input-email"
         "input-password input-repeatPassword";
-    justify-content: center;
     
 }
 
+.inputsRegister{
+  outline: none;
+}
+
 .input-email{
-    grid-column: 1/3;
+
+
 }
 
 inputs::placeholder {
@@ -154,7 +171,8 @@ inputs::placeholder {
 .inputsNameCpf{
     
 }
-.input-name, .input-birthDate{
+.input-name{
+    grid-column: 1/3;
 
 }
 .input-cpf{
@@ -266,8 +284,6 @@ inputs::placeholder {
 
     color: #ffffff;
 }
-
-
 
 .line {
 
