@@ -17,9 +17,8 @@ return(
             <div className="legalPerson"> PESSOA JURÍDICA</div>
                 <input id='circleLegalPerson' className="circleLegalPerson" type="radio" />
         </div>
-    
+
         <section className='inputs'>
-            
                 <input className="input-name inputsRegister" placeholder="Nome completo*:" type="text" name="name" id="name"/>
                 <input className="input-cpf inputsRegister" placeholder="CPF*:" type="number" name="cpf" id="cpf"/>
                 <input className="input-birthDate inputsRegister" placeholder="Data de Nascimento*:" type="date" name="cpf" id="cpf"/>
@@ -27,8 +26,11 @@ return(
                 <input className="input-email inputsRegister" placeholder="E-mail*:" type="text" name="text" id="text"/>
                 <input className="input-password inputsRegister" placeholder="Senha*:" type="password" name="password" id="password"/>
                 <input className="input-repeatPassword inputsRegister" placeholder="Repetir Senha*:" type="password" name="repeatPassword" id="repeatPassword"/>
-            
         </section>
+
+        <select className='selection'>
+            <option value='escolha'> escolha </option>
+        </select>
        
 
             {/* <h2 className="required-field" > (*) Campos obrigatórios </h2>

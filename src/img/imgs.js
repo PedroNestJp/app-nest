@@ -30,7 +30,7 @@ import imgIntelType from '../assets/icons/imgIntelProcessor.png'
 import imgAmdType from '../assets/icons/imgAmdProcessor.png'
 import imgBbdPc from '../assets/pcs.png'
 import imgBbdMonitor from '../assets/monitores.png'
-import imgBbdPeripherals from '../assets/perifericos.png'
+import imgBbdPeripherals from '../assets/kitGamer.png'
 import imgBbdHardware from '../assets/hardware.png'
 
 

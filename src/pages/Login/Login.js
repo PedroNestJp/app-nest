@@ -4,10 +4,10 @@ import NavbarShortComponent from "../../components/NavbarShortComponent"
 
 const Login = () => {
  return(
-  <div>
+  <>
     <NavbarShortComponent/>
     <LoginComponent/>
-  </div>
+  </>
  )
 }
 
