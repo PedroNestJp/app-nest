@@ -10,7 +10,7 @@ const LoginComponent = () => {
 
     return(
 
-        <main > 
+        <> 
 
             <div className="main-container"> 
                 <div id="loginScTitle" className="title">  FAZER LOGIN  </div>
@@ -44,7 +44,7 @@ const LoginComponent = () => {
                 <span className="text-forgotPassword">Esqueceu a senha?</span>
                 <span className="lineLogin"></span>
                 <span className="text-loginSocial"> QUERO ACESSAR COM MINHAS REDES SOCIAIS </span>
-                <div className="loginSocial">
+                
                     <a  href="https://www.facebook.com/" 
                         target="_blank" rel="noopener noreferrer">
                         <button className="login-fb"> 
@@ -56,10 +56,10 @@ const LoginComponent = () => {
                             <span className="gg-text"> Google </span> 
                         </button>
                     </a>
-                </div>
+             
                 <div className="loginOrLine">
                     <span className="line1"></span>
-                    <span className="span3"> ou </span>
+                    <span className="textOr">ou</span>
                     <span className="line2"></span>
                 </div>
                 <span className="span4"> Não tem cadastro ?</span>
@@ -70,7 +70,7 @@ const LoginComponent = () => {
                 </a> 
             </div>
             
-        </main>
+        </>
 
     )
 }

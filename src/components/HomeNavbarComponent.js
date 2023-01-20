@@ -1,4 +1,5 @@
 import { iconProfile, logo, menuHamburguer,iconShopCart, iconSupport, iconFavorites, iconLupa  } from "../img/imgs"
+import Home from "../pages/home/Home.css"
 import { Link } from "react-router-dom"
 
 

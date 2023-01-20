@@ -7,13 +7,6 @@
     font-family: 'Poppins', sans-serif;
 }
 
-main{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
 .main-container{
 
     display: flex;
@@ -21,12 +14,10 @@ main{
     justify-content: flex-start;
     flex-direction: column;
     margin: 20px;
-    width: 419px;
     height: 620px;
  
 
     background: #FFFFFF;
-    border: 1px solid #D9D9D9;
     border-radius: 5px;
 
 }
@@ -40,6 +31,7 @@ main{
     font-size: 25px;
     line-height: 42px;
     color: #E20100;
+    text-align: -webkit-center;
 }
 
 .inputsLogin{
@@ -51,26 +43,13 @@ main{
 
 }
 
-input, .email,.senha{
+.email,.senha{
     width: 370px;
     height: 45px;
     padding-left: 20px;
     border: 1px solid rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     outline: #E20100; 
-}
-
-button.enter{
-    margin: 20px 20px 0px 20px;
-    border: 1px solid #E20100;
-    background: #E20100;
-}
-
-button, .enter, .register{
-    cursor: pointer;
-    width: 370px;
-    height: 45px;
-    border-radius: 5px;
 }
 
 input::placeholder, .email, .senha{
@@ -82,6 +61,19 @@ input::placeholder, .email, .senha{
     
     color: rgba(226, 1, 0, 0.6);
 }
+.enter{
+    margin-top: 20px;
+    border: 1px solid #E20100;
+    background: #E20100;
+}
+
+.enter, .register{
+    cursor: pointer;
+    width: 370px;
+    height: 45px;
+    border-radius: 5px;
+}
+
 
 .enter-text,.register-text{
     font-family: 'Poppins';
@@ -91,14 +83,14 @@ input::placeholder, .email, .senha{
     color: #FFFFFF;
 }
 
-.span, .lineLogin{
+.lineLogin{
     margin: 20px;
     width: 360px;
     height: 2px;
     background-color: #000000;
 }
 
-span, .forgotPassword{
+.forgotPassword{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 600;
@@ -107,35 +99,26 @@ span, .forgotPassword{
     color: #E20100;
 }
 
-span, .loginSocial{
-
-    margin: 10px 20px 20px 20px;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    
-    color: #E20100;
-
-    
+span.text-loginSocial{
+    text-align: -webkit-center;
 }
 
-button.login-gg, .login-fb{
+.login-gg, .login-fb{
     cursor: pointer;
-    width: 177px;
-    height: 48px;
+    width: 173px;
+    height: 45px;
     border-radius: 5px;
     background: #FFFFFF;
+    margin: 10px;
 }
 
-button.login-fb{
+.login-fb{
 
     border: 1px solid #609CCE;
 
 }
 
-button.login-gg{
+.login-gg{
 
     border: 1px solid #E20100;
 
@@ -174,6 +157,7 @@ button.login-gg{
     width: 120px;
     height: 0px;
     border: 0.1px solid #000000;
+    margin: 5px;
 
 }
 
@@ -181,6 +165,7 @@ button.login-gg{
 
     width: 222px;
     height: 45px;
+    text-align: -webkit-center;
 
     font-family: 'Poppins';
     font-style: normal;

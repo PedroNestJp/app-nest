@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import { iconFacebook, iconGmail, iconInstagram, iconLinkedin, iconTelegram, iconWhatsapp, iconYoutube  } from "../img/imgs"
+import Home from "../pages/home/Home.css"
 
 const ContactLine1 = () => {
     return(
@@ -8,13 +9,13 @@ const ContactLine1 = () => {
         <Link href="https://www.facebook.com/nestinformatica/"> 
             <img id="iconFacebook" className="social-media" srcSet={iconFacebook} alt=""/>
         </Link>
-    </span> 
-    <span> 
+    </span>
+    <span>
       <Link href="#"> 
         <img className="social-media" srcSet={iconGmail} alt=""/> 
       </Link>
     </span>
-    <span> 
+    <span>
       <Link href="https://www.instagram.com/nestinformatica/"> 
         <img className="social-media" srcSet={iconInstagram}  alt=""/> 
       </Link>
