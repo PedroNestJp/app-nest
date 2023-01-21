@@ -33,10 +33,10 @@ import imgBbdMonitor from '../assets/monitores.png'
 import imgBbdPeripherals from '../assets/kitGamer.png'
 import imgBbdHardware from '../assets/hardware.png'
 
-
-
 export {iconProfile,logo, iconBuy, iconChat, 
         iconFacebook, iconFavorites, iconGmail, 
         iconLinkedin, iconLupa, iconShopCart, iconSupport, iconTelegram, 
         iconWhatsapp, iconYoutube, imgAmdType, imgBackground2, iconInstagram, 
-        typepc1, typepc2, typepc3, gab1, gab2,gab3,imgIntelType, imgBbdPc, imgBbdMonitor, imgBbdPeripherals, imgBbdHardware, menuHamburguer, starIcon }
+        typepc1, typepc2, typepc3, gab1, gab2,gab3,imgIntelType, imgBbdPc, imgBbdMonitor, 
+        imgBbdPeripherals, imgBbdHardware, menuHamburguer, starIcon }
+

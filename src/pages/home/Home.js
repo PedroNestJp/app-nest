@@ -4,6 +4,7 @@ import { HomeNavbarComponente } from "../../components/HomeNavbarComponent"
 import { ContactLine1, ContactLine2 } from "../../components/ContactLines"
 import HomeCss from "../home/Home.css"
 
+
 const Home = () => {
     return(
             <div>
@@ -11,6 +12,7 @@ const Home = () => {
                 <ContactLine1/>
                 <HomeScComponente/>
                 <ContactLine2/>
+                
             </div>
     )
 }

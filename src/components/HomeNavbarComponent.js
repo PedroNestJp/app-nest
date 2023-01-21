@@ -5,7 +5,13 @@ import { Link } from "react-router-dom"
 
 const HomeNavbarComponente = () =>{
     return(
-<div className="navbarhome"> 
+<div className="navbarhome">
+
+        {/* <div>
+            <select className='selection'>
+                <option value='escolha'> escolha </option>
+            </select>
+        </div> */}
           <span > 
             <img srcSet={menuHamburguer} className="menuHamburguer" src="../assets/icons/menuHamburguer.png" alt=""/> 
           </span>

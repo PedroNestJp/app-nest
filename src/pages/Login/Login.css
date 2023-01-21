@@ -28,9 +28,9 @@
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 800;
-    font-size: 25px;
-    line-height: 42px;
+    font-size: 20px;
     color: #E20100;
+    text-align: -webkit-center;
     text-align: -webkit-center;
 }
 
@@ -63,7 +63,6 @@ input::placeholder, .email, .senha{
 }
 .enter{
     margin-top: 20px;
-    border: 1px solid #E20100;
     background: #E20100;
 }
 
@@ -72,6 +71,7 @@ input::placeholder, .email, .senha{
     width: 370px;
     height: 45px;
     border-radius: 5px;
+    border: 1px solid #E20100;
 }
 
 
@@ -86,7 +86,7 @@ input::placeholder, .email, .senha{
 .lineLogin{
     margin: 20px;
     width: 360px;
-    height: 2px;
+    height: 1px;
     background-color: #000000;
 }
 
@@ -154,29 +154,24 @@ span.text-loginSocial{
 
 .line1, .line2{
 
-    width: 120px;
-    height: 0px;
-    border: 0.1px solid #000000;
+    width: 160px;
+    height: 1px;
+    background-color: #000000;
     margin: 5px;
 
 }
 
 .span4{
 
-    width: 222px;
-    height: 45px;
     text-align: -webkit-center;
-
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
-    line-height: 22px;
-    
     color: #E20100;
     
 }
 
 .register{
-    background: #000000;
+    background: #E20100;
 }
