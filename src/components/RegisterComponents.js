@@ -27,9 +27,9 @@ return(
             <input className="input-password inputsRegister" placeholder="Senha*:" type="password" name="password" id="password"/>
             <input className="input-repeatPassword inputsRegister" placeholder="Repetir Senha*:" type="password" name="repeatPassword" id="repeatPassword"/>
             <h3 className="required-field" > (*) Campos obrigatórios </h3>
-
-
         </section>
+    </div>
+    <div className='termsBtnRegister'>
         <section className='terms'>
             <div className='term'>
                 <input className='acceptTermsInput1' type="checkbox"/> 
@@ -48,7 +48,6 @@ return(
                 </button>
             </a>
         </div>
-
     </div>
 </main>
 )

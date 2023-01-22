@@ -45,8 +45,9 @@
 .inputSearch {
 
     width: 100%;
-    height: 30px;
+    height: 35px;
     outline: none;
+    padding-left: 15px;
     background: #FFFFFF;
     border-radius: 5px 0px 0px 5px;
     border: none;
@@ -60,7 +61,7 @@ input:hover{
 
     cursor: pointer;
     width: 40px;
-    height: 30px;
+    height: 35px;
     background: #E20100;
     border-radius: 0px 5px 5px 0px;
     border: none;
@@ -282,7 +283,10 @@ a#textTypePc{
     flex-direction: row;
     flex-wrap: wrap;
 }
-
+.img-hl-1,.img-hl-2, .img-hl-3, .img-bs-1, .img-bs-2,.img-bs-3{
+    height: 220px;
+    width: 200px;
+}
 .hl-text {
     
     font-family: 'Poppins';
@@ -379,61 +383,68 @@ a#textTypePc{
     color: #000000;
 }
 
-@media (min-width:765px ) {
-    .buyByPlatform{
+.buyByPlatform{
+
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+
+}
+
+@media (max-width:515px ) {
+
+    .divBuyByPlatform{
         display: flex;
         flex-wrap: wrap;
+        flex-direction: column;
     }
 
 }
 
-.buyByPlatform{
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-}
 .divBuyByPlatform{
- 
-    flex-wrap: wrap;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
 }
 
 .divPlatformAmd, .divPlatformIntel{
+
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 20px;
+
 }
 .text-buy-by-platform{
 
     text-align: -webkit-center;
-
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 900;
     font-size: 20px;
     line-height: 30px;
     color: #FF0101;
+
 }
 
 .text-platform-amd, .text-platform-intel{
 
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size: 25px;
-    line-height: 30px;
+    font-size: 18px;
     color: #FF0101;
 }
 .platform-intel, .platform-amd {
     cursor: pointer;
-    width: 520px;
-    height: 162px;
+    width: 380px;
+    height: 140px;
     border-radius: 5px;
 }
 
 .platform-intel:hover, .platform-amd:hover{
-    width: 530px;
+    width: 400px;
     height: 172px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     border-radius: 5px;
@@ -495,6 +506,7 @@ a#textTypePc{
 
 }
 
+
 .departments{
     display: flex;
     justify-content: center;
@@ -508,7 +520,14 @@ a#textTypePc{
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    flex-wrap: wrap;
+
+}
+
+@media (max-width:765px ) {
+    .bbdBoxs{
+        display: flex;
+        flex-wrap: wrap;
+    }
 
 }
 
@@ -517,34 +536,37 @@ a#textTypePc{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 900;
-    font-size: 28px;
-    line-height: 52px;
+    font-size: 20px;
+    margin: 20px;
 
     color: #E20100;
 
 }
 
 .styleBox-bbd{
+
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 20px;
-    box-sizing:border-box ;
-    width: 218px;
-    height: 120px;
-    
+    margin: 15px;
+    box-sizing: border-box;
     background: #F5F5F5;
     border-radius: 5px;
 }
+
+.img-bbd-1,.img-bbd-2,.img-bbd-3,.img-bbd-4,.img-bbd-5{
+    height: 100px;
+    width: 200px;
+}
+
 
 .bbd-text{
     
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 15px;
     
     color: #E20100;
 
@@ -572,23 +594,97 @@ a#textTypePc{
 }
 
 .footer{
+
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 415px;
+    flex-direction: column;
     background: #000000;
+    
 
 }
 
 .info-footer{
 
-    height: 199px;
-    border: #F5F5F5 solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+
 }
 
+a.a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+}
 
-.logoFooter{
+.texts-info-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin: 10px 10px 0px 10px;
+    column-gap: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width:535px){
+    .texts-info-footer{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: colum;
+    }
+}
+
+.subFooter{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #000000;
+    height: 211px;
+
+}
+
+.certifications{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
-    width: 189px;
-    height: 204px; 
+    width: 100%;
+    height: 67px;
+    background: #000000;
+
+
+}
+
+.businessInformation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.businessTexts, .openingHours{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+
+    color: rgba(255, 255, 255, 0.7);
+}
+.logoSubFooter{
+    
+    width: 90px;
+    height: 50px; 
 }
