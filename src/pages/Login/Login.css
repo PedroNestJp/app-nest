@@ -49,7 +49,7 @@
     padding-left: 20px;
     border: 1px solid rgba(0, 0, 0, 0.5);
     border-radius: 5px;
-    outline: #E20100; 
+    outline: #E20100;
 }
 
 input::placeholder, .email, .senha{
