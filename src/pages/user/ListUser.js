@@ -7,14 +7,17 @@ const ListUser = () => {
 
     const [usuarios, setUser] = useState([])
 
-    useEffect(() => {
-        recuperarUsuarios()
-    }, [])
+    // useEffect(() => {
+    //     recuperarUsuarios()
+    // }, [])
 
     const recuperarUsuarios = async () => {
         const resposta = await api.get('/users')
         setUser(resposta.data)
     }
+    recuperarUsuarios()
+    // if (resposta.status === 200 || response.status === 201) {
+    //     return resposta;
 
     function preencheTabela() {
         return usuarios.map((user) => (
