@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { Link, useNavigate } from 'react-router-dom'
-import Api from  '../../service/Api'
+import api from  '../../service/Api'
 
 
 const CreateUSer = () => {
@@ -22,7 +22,7 @@ const CreateUSer = () => {
             senha: senha,
             repetirSenha: repetirSenha
         }
-        const resposta = await Api.post('/user/create', user)
+        const resposta = await api.post('/user/create', user)
         if (resposta.status === 200) {
             navigate("/users");
         }
